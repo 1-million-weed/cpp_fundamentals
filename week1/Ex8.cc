@@ -13,5 +13,5 @@ int main(int argc, char* argv[])
     cout << (ip4 >> 24) << "." 
          << (ip4 >> 16 & 0xFF) << "." 
          << (ip4 >> 8 & 0xFF) << "." 
-         << (ip4 & 0xFF) << endl;
+         << (ip4 & 0xFF) << "\n";
 }
