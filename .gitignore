@@ -40,3 +40,5 @@ Books/
 
 # debug information files
 *.dwo
+test_file.cc
+.vscode/
