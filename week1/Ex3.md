@@ -4,4 +4,10 @@
 
 2. Default arguments: When defining a function using the assignment operator you can specify the default values used in the function if no value is provided.
 
-3. C++ allows for object-oriented programming. 
+3. C++ allows for object-oriented programming. This means you can define classes and create objects that encapsulate both data and functions. 
+
+4. References: using references you can provide a synonym for a variable. This allows you to pass modifiable variables to functions without using pointers.
+
+5. The use of functions in a struct. In C++ functions can be members of a struct to allow manipulation of the data in the struct.
+
+6. Data hiding. Using the keywords private, public and protected you can control the access to data in a class or struct.
