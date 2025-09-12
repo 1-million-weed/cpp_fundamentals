@@ -40,6 +40,9 @@ Books/
 
 # debug information files
 *.dwo
-test_file.cc
+Books/
+.vscode/
+test_file.cctest_file.cc
 .vscode/
 *.zip
+test_file.cc
