@@ -1,2 +1,2 @@
-04.check
+04.cc
 descr.txt

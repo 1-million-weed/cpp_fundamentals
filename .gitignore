@@ -42,3 +42,4 @@ Books/
 *.dwo
 test_file.cc
 .vscode/
+*.zip
