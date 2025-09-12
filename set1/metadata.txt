@@ -1,3 +1,2 @@
 Set:  Set 1
 Authors: Rob Sligter, Marinus van den Ende, Tudor Bulf
-Rater:
