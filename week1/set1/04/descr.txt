@@ -1,0 +1,3 @@
+4. Remove the NTBSs and transform them into a single Raw String Literal.When solving the exercise you'll notice that you won't be able to use the R"(...)" form of the RSLs. Formulate (submit) a rule telling you when this form can and cannot be used.
+
+R"(...)" can be used when the string you want to output does not contain )" . Otherwise your string will end prematurely.

@@ -1,0 +1,13 @@
+3. Describe six (major) aspects of C++ which are not available in C. Give for each of these aspects a short (1, at most 2 sentences) description what its purpose is.
+
+1. C++ allows multiple functions to have the same name. Because of the strict type checking, the compiler can distinguish between them based on their parameter types.
+
+2. When defining a function using the assignment operator you can specify the default values used in the function if no value is provided.
+
+3. C++ allows for object-oriented programming. This means you can define classes and create objects that encapsulate both data and functions. 
+
+4. Using references you can provide a synonym for a variable. This allows you to pass modifiable variables to functions without using pointers.
+
+5. The use of functions in a struct. In C++ functions can be members of a struct to allow manipulation of the data in the struct.
+
+6. Data hiding. Using the keywords private, public and protected you can control the access to data in a class or struct.

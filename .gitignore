@@ -1,5 +1,6 @@
 # Prerequisites
 *.d
+Books/
 
 # Compiled Object files
 *.slo
@@ -31,7 +32,7 @@
 *.la
 *.a
 *.lib
-
+.vscode
 # Executables
 *.exe
 *.out
@@ -39,3 +40,6 @@
 
 # debug information files
 *.dwo
+test_file.cc
+.vscode/
+*.zip
