@@ -1,0 +1,1 @@
+6. In this exercise define a main function, reading an unsigned integral value from cin. Provide 6 cout statements with 6 diffrent ways of determining if the variable is even or odd.

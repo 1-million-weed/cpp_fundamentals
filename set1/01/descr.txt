@@ -1,7 +1,6 @@
-Submit:
+1. Construct the hello world program. Also answer the following points:
 
 - The listing (of course, see the introductory text above this exercise) of your program;
-
 - The commands you entered to compile and link the program;
 g++ -c hello.cc -o hello.o  #compile and create object file
 g++ hello.o -o hello        #link object file into executable

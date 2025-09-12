@@ -1,0 +1,4 @@
+7. Write a program whose main function can handle command line arguments. If no arguments are passed to the program it writes hello world to the standard output stream (i.e., cout); if one argument is specified it writes hello xxx, where xxx is the first command line argument that's provided when the program is run; if more than one arguments are specified then the 1st argument specifies the index of the argument to display. E.g., a.out 3 arg2 arg3 arg4 writes hello arg3.
+Submit your program and also describe how you can call the program so that it displays the 1st argument other than by specifying a single argument.
+
+To call this program so that it displays the 1st argument without specifing a single argument, you use as the first argument '1'. This way, no matter how many arguments you have, the argument which will be printed is '1' (the first argument).

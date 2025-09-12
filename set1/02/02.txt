@@ -1,4 +1,4 @@
-**Give short (1-2 sentences) answers to the following questions**
+2. Give short (1-2 sentences) answers to the following questions
 
 1. In C++, what's the difference between a declaration and a definition?
 - Declarations tell the compiler that something exists, without providing implemetation or allocating memory

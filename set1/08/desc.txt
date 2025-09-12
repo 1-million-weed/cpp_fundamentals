@@ -1,0 +1,13 @@
+8. Write a program requiring five arguments like the ones shown in the illustration. Each of the first four arguments must have values between 0 and 255, and the fifth argument must have a value between 0 and 32 (including 0 and 32). The program may assume the arguments are correctly specified. The program may define a single size_t ip4 variable which is, using a single initialization expession, initialized to the 32 bits of the masked address. Next it uses a single cout statement to show the masked address using the common dot-separated format.
+Submit your program and its output when called with arguments 129 125 3 162 and mask values of, respectively, 32, 28, 24, 20, and 16. Briefly explain why the last two outputs are equal.
+
+Inputs  -->  Outputs:
+
+./08 129 125 3 162 32  -->  129.125.3.162
+./08 129 125 3 162 28  -->  129.125.3.160
+./08 129 125 3 162 24  -->  129.125.3.0
+./08 129 125 3 162 20  -->  129.125.0.0
+./08 129 125 3 162 16  -->  129.125.0.0
+
+
+The last 2 outputs are the same because the 32-bit representation of 129.125.3.162 is 10000001 01111101 00000011 10100010. Applying a 20 bit netmask means that the last 12 bits are set to 0. Applying a 16 bit netmask means that the last 16 bits are set to 0. Since bits 17-22 are 0, this means that by applying a netmask of 20 or 16 (or anything between 16 and 22) will result in the same output.
