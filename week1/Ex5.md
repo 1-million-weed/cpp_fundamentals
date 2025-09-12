@@ -13,9 +13,11 @@
 | `\f`           | Form feed |
 | `\a`           | Alert (bell sound) |
 | `\b`           | Backspace |
+| `\ooo`           | Octal Number |
+| `\xhh`           | Hexadecimal Number |
 
 
-If you use an unkown escape sequence the compiler gives you a warning and ignores the backslash. As seen in the example the output of the program is 'HellocWorld' because '\c' is not a known escape sequence.
+If you use an unknown escape sequence the compiler gives you a warning and ignores the backslash. As seen in the example the output of the program is 'HellocWorld' because '\c' is not a known escape sequence.
 
 
 
