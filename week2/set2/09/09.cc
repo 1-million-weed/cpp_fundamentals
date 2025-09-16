@@ -1,7 +1,9 @@
 #include <iostream>
 
 int main() {
-    size_t countA = 0, countE = 0, countI = 0;
+    size_t countA = 0;
+    size_t countE = 0;
+    size_t countI = 0;
     char ch;
     while (std::cin.get(ch)) 
     {
