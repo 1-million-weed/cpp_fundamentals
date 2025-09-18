@@ -1,0 +1,1 @@
+11. Write a program 'complement' that shows the value of its first argument (a (signed) integer), its bits (as a series of 0 and 1 values, and the numeric values of its set bits (be careful what types you use).
