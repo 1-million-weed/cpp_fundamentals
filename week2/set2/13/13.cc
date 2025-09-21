@@ -1,0 +1,19 @@
+
+
+int main() 
+{
+
+    if (first == test1) 
+    {
+    
+        if (second == test2)
+        { 
+            value = 5;
+        }
+        else 
+    {
+        value = 6;
+    }
+    }
+    
+}
