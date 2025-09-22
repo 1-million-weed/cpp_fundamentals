@@ -1,2 +1,2 @@
 Set:  Set 2
-Authors: Rob Sligter, Tudor Bulf
+Authors: Rob Sligter, Tudor Bulf, Jelmer Bierma
