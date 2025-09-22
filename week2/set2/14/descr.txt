@@ -1,0 +1,22 @@
+14. Implement this iterative algorithm, showing each iteration step at the standard output stream. Use the double data type, and in an outer loop ask the user to enter a value of which the square root must be completed. Stop once the user enters a non-positive value.
+
+An example of the interaction is:
+
+
+    Enter a value to compute the sqrt of (<= 0 to stop): 16   
+    1: x0: 1, x1 = 8.5, sqr is: 72.25
+    2: x0: 8.5, x1 = 5.19118, sqr is: 26.9483
+    3: x0: 5.19118, x1 = 4.13666, sqr is: 17.112
+    4: x0: 4.13666, x1 = 4.00226, sqr is: 16.0181
+    5: x0: 4.00226, x1 = 4, sqr is: 16
+    6: x0: 4, x1 = 4, sqr is: 16
+    7: x0: 4, x1 = 4, sqr is: 16
+    sqrt(16) is 4
+    Enter a value to compute the sqrt of (<= 0 to stop): .36
+    1: x0: 1, x1 = 0.68, sqr is: 0.4624
+    2: x0: 0.68, x1 = 0.604706, sqr is: 0.365669
+    3: x0: 0.604706, x1 = 0.600018, sqr is: 0.360022
+    4: x0: 0.600018, x1 = 0.6, sqr is: 0.36
+    5: x0: 0.6, x1 = 0.6, sqr is: 0.36
+    sqrt(0.36) is 0.6
+    Enter a value to compute the sqrt of (<= 0 to stop): 0
