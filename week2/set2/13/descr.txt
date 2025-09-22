@@ -1,0 +1,57 @@
+Consider the folllowing statement (its layout is incorrect, which is part of the exercise)
+
+
+if (first == test1) if (second == test2) value = 5; else value = 6;
+    
+describe in your own words how the compiler interprets this statement;
+rewrite this statement using the correct layout (no additional syntax elements may be used);
+instead of the interpretation as used by the compiler: how would you change the statement so that the `non-default' interpretation is used?
+describe in your own words how your changed statement is interpreted
+there is a flaw in the way the original statement was formulated which is unrelated to its layout. What is the flaw and how to fix it?
+
+
+The compiler interprets the statement as follows; first it checks the condition (first == test) if true, then the codition (sencond ==test2) is evaluated. 
+If the condition (second == test2) is not true then the code in the else block is executed. The correct layour for the statement is as follows;
+
+
+int main() 
+{
+    if (first == test1) 
+    {   
+        if (second == test2)
+        { 
+            value = 5;
+        }
+        else 
+        {
+        value = 6;
+        }
+    }
+}
+
+To use the 'non-default' interpretation you can rewirte the statement like this;
+
+int main() 
+{
+    if (first == test1) 
+    {   
+        if (second == test2)
+        { 
+            value = 5;
+        }
+    }
+    else 
+    {
+        value = 6;
+    }
+
+}
+
+Now the compiler interprets the changed statement like this:
+First the condition (first == test1) is checked.
+If this condition is true, then the inner if (second == test2) is checked.
+If it is true, then value = 5
+If it is false, then nothing happens.
+If the condition (first == test1) is false, the else is executed and value = 6
+
+The flaw in the way the original statement was formulated is that the else is always matched to the closest unmatched if, which may not be your intent.
