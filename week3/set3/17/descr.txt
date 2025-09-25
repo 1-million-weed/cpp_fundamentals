@@ -1,0 +1,1 @@
+17. Write a program that takes the command line arguments and sums them up. They can be either int or double.
