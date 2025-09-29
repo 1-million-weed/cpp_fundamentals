@@ -1,4 +1,6 @@
 #include "functions.h"
 
 
-int countCharacters()
+int countCharacters() {
+    return 0;
+}
