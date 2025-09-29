@@ -7,7 +7,10 @@ It is appropriate to use an int-type parameter when the function only needs a sm
 bool is_perfect_square(int x) 
 {
     int root = std::sqrt(x);
-    return root * root == x;
+    if (root * root == x) {
+        return true;
+    }
+    return false;
 }
 
 
