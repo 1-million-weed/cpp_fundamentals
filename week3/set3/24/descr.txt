@@ -1,0 +1,1 @@
+24. Corectly construct the program from the slides. Explain the 3 diffrent optimisation types and profile the code. Also explain the file resulted from the profiling.
