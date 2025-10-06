@@ -1,0 +1,7 @@
+25. Define 'Encapsulation' and 'Data hiding'. Provide an example of class. Provide only the interface, not the implementation. Why is that?
+
+Encapsulation means the bundling of data and methods related to this data into a class. It allows you to make parts of this class public, while hiding other internal parts or implementations.
+
+Data hiding is an aspect of encapsulation. It is when internal objects of a class are hidden from the interface. this is done by marking data or methids as private/protected. they can still be modified if there are public methods that access them safely.
+
+The implementation is irrelevant here because we only focus on the design of the data and to apply the concepts defined above.

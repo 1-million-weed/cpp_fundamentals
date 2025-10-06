@@ -4,15 +4,10 @@
 int main()
 {
     Line line;
-    
     while (line.getLine())
     {
-        std::string word;
+        string word;
         while (!(word = line.next()).empty())
-        {
-            std::cout << word << '\n';
-        }
+            cout << word << '\n';
     }
-    
-    return 0;
 }

@@ -28,7 +28,6 @@ std::string Person::getPhone() const
     return phone;
 }
 
-
 void Person::display() const
 {
     std::cout << "Phone: " << phone << std::endl;

@@ -1,17 +1,17 @@
-#ifndef LINE_H
-#define LINE_H
+#ifndef LINE_H_
+#define LINE_H_
 
 #include <string>
+using namespace std;
 
 class Line
 {
-    std::string d_line;
-    size_t d_pos;
+    string line;
+    size_t pos;
 
 public:
     Line();
     bool getLine();
-    std::string next();
+    string next();
 };
-
 #endif

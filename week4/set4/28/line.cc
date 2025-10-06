@@ -3,42 +3,40 @@
 
 Line::Line()
 :
-    d_pos(std::string::npos)
+    pos(string::npos)
 {}
 
 bool Line::getLine()
 {
-    std::getline(std::cin, d_line);
+    getline(cin, line);
     
     // Find first non-whitespace character
-    d_pos = d_line.find_first_not_of(" \t");
+    pos = line.find_first_not_of(" \t");
     
     // Return true if we found non-whitespace characters
-    return d_pos != std::string::npos;
+    return pos != string::npos;
 }
 
-std::string Line::next()
+string Line::next()
 {
-    if (d_pos == std::string::npos)
+    if (pos == string::npos)
         return "";
     
     // Find the end of current substring (next whitespace or end of string)
-    size_t end = d_line.find_first_of(" \t", d_pos);
-    
-    std::string result;
-    if (end == std::string::npos)
+    size_t end = line.find_first_of(" \t", pos);
+    string result;
+    if (end == string::npos)
     {
         // No more whitespace found, take rest of string
-        result = d_line.substr(d_pos);
-        d_pos = std::string::npos;  // No more substrings
+        result = line.substr(pos);
+        pos = string::npos;  // No more substrings
     }
     else
     {
         // Extract substring up to whitespace
-        result = d_line.substr(d_pos, end - d_pos);
+        result = line.substr(pos, end - pos);
         // Find next non-whitespace character
-        d_pos = d_line.find_first_not_of(" \t", end);
+        pos = line.find_first_not_of(" \t", end);
     }
-    
     return result;
 }
