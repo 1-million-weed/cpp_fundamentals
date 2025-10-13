@@ -47,3 +47,4 @@ test_file.cctest_file.cc
 *.zip
 test_file.cc
 .DS_Store
+Elisa/
