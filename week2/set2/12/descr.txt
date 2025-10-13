@@ -1,0 +1,6 @@
+12.  Write a simple C++ program using iterations to determine whether a value is divisible by 3.Your program expects one argument: the value to test. It also defines a size_t value sum. The implied challenge is that the value passed as argument could be way too large to fit in, e.g., an unsigned long long value. Suppose you'd specify a value of 1,000 digits: no way you could store that value in even the largest unsigned value our language has available. However, the largest value of 1,000 summed digits is 9 * 1,000 = 9,000 and that value painlessly fits in a size_t.
+Just before the program ends the program must use a single cout statement, writing
+"not divisible by 3
+if the value passed to the program is not divisible by three and
+"divisible by 3
+if the value is divisible by three.

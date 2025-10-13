@@ -1,0 +1,1 @@
+16. Write a program that reads its input line by line, and outputs each line in reverse, even if the input is in UTF-8.

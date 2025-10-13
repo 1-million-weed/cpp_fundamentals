@@ -1,0 +1,119 @@
+In what situation is it appropriate to:
+
+1: define an int-type parameter?
+
+It is appropriate to use an int-type parameter when the function only needs a small value type that is cheap to copy.
+
+bool is_perfect_square(int x) 
+{
+    int root = std::sqrt(x);
+    if (root * root == x) {
+        return true;
+    }
+    return false;
+}
+
+
+2: define a std::string value parameter?
+It is appropriate to use a std::string value parameter when the function needs to make its own copy or modify the argument. 
+
+string add_exclamation(std::string greet) 
+{
+    return greet.append("!");
+}
+
+
+3: define a const reference to an int-type parameter?
+
+This is not appropriate for small types like int, as passing by value is more appropriate.
+
+
+4:define a const reference to a std::string value parameter?
+
+It is appropriate to use a const reference to a std::string when the function needs read-only access without making a copy.
+
+bool check_study(const std:string& degree)
+{
+    if (degree == "AI") {
+        return true;
+    }
+    return false;
+}
+
+
+5: define a non-const reference to an int-type parameter?
+
+When the function needs to alter the integer value passed to it.
+
+void increment(int& x) {
+    x++;
+}
+
+
+6: define a non-const reference to a std::string value parameter?
+
+When the function needs to alter the string value passed to it.
+
+void remove_last_char(std::string& str) 
+{
+    str.pop_back();
+}
+
+
+7: define a const rvalue-reference to an int-type parameter?
+
+This is not appropriate for small types like int, as passing by value is more appropriate.
+
+
+8: define a const rvalue-reference to a std::string parameter?
+When the function needs to take ownership of a temporary string value without modifying it.
+
+9: define an rvalue-reference to an int-type parameter?
+
+This is not appropriate for small types like int, as passing by value is more appropriate.
+
+define an rvalue-reference to a std::string parameter?
+
+
+
+
+
+10: return an int-type value?
+When the function needs to return an integer result.
+
+int add(int a, int b) {
+    return a + b;
+}
+
+11: return a std::string value?
+
+When the function needs to return a string result.
+
+std::string greet_user(const std::string& name) {
+    return "Hello, " + name + "!";
+}
+
+
+12: return a const reference to an int?
+Never, as returning a reference to a local variable would lead to undefined behavior.
+
+13: return a const reference to a std::string?
+Never, as returning a reference to a local variable would lead to undefined behavior.
+
+return a non-const reference to an int?
+Never, as returning a reference to a local variable would lead to undefined behavior.
+
+return a non-const reference to a std::string?
+Never, as returning a reference to a local variable would lead to undefined behavior.
+
+return a const rvalue-reference to an int?
+Never, as returning a reference to a local variable would lead to undefined behavior.
+
+return a const rvalue-reference to a std::string?
+Never, as returning a reference to a local variable would lead to undefined behavior.
+
+return an rvalue-reference to an int?
+Never, as returning a reference to a local variable would lead to undefined behavior.
+
+return an rvalue-reference to a std::string?
+Never, as returning a reference to a local variable would lead to undefined behavior.

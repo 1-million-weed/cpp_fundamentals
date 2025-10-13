@@ -1,0 +1,1 @@
+26. Implement the person class. Provide the members mentioned in the annotations, as well as insert and extract.
