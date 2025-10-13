@@ -1,0 +1,1 @@
+28. Design a line class. This should have the function getLine() that returns true if the line read from cin contains non-ws, and next() that returns the next substring from the line retrieved by getLine() consisting of non-ws characters, and an empty string if no such substring is available anymore.

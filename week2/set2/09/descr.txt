@@ -1,0 +1,5 @@
+9. Write a program reading all information from the standard input stream (use redirection to read the information in a file). The program separately counts the nummber of a-, e-, and i-characters (capital or lower-case).
+Download the file flow.txt, and submit your program and its output when processing the file flow.txt.
+
+Output:
+# a-chars: 214, # e-chars: 441, # i-chars: 223
